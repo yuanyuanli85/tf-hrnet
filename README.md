@@ -3,16 +3,21 @@
 ## Overview 
 This is a tensorflow implementation of [high-resolution representations for ImageNet classification](https://arxiv.org/abs/1904.04514). The network structure and training hyperparamters are kept the same as the offical [pytorch implementation](https://github.com/HRNet/HRNet-Image-Classification).
 
-## Features of repo
+## Features of this repo
 * Low-level implementation of tensorflow
 * Multiple GPU training via Horovod 
 * Support configurable network for HRNet 
-* Reproduce the on par accuracy of HRnet with its offical pytorch implementation.
+* Reproduce the close accuracy compared with its offical pytorch implementation.
 
 ## HRnet structure details
 First, the four-resolution feature maps are fed into a bottleneck and the number of output channels are increased to 128, 256, 512, and 1024, respectively. Then, we downsample the high-resolution representations by a 2-strided 3x3 convolution outputting 256 channels and add them to the representations of the second-high-resolution representations. This process is repeated two times to get 1024 channels over the small resolution. Last, we transform 1024 channels to 2048 channels through a 1x1 convolution, followed by a global average pooling operation. The output 2048-dimensional representation is fed into the classifier.
 
-## Accuracy of pretrained models 
+## Accuracy of pretrained models
+| model |#Params | GFLOPs |top-1 error| top-5 error| Link |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| HRNet-W18-C | 21.3M | 3.99 | -- | -- | To be shared|
+| HRNet-W30-C | 37.7M | 7.55 | 21.9% | 6.0% | To be shared|
+
 
 
 ## Installation
