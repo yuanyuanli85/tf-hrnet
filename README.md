@@ -64,3 +64,28 @@ mpirun -np ${nb_gpus} -bind-to none -map-by slot -x NCCL_DEBUG=INFO -x LD_LIBRAR
     -mca pml ob1 -mca btl ^openib \
     python top/train.py --enbl_multi_gpu  
 ```
+
+
+## Related Efforts 
+1. Lot of code to build the dataset and training pipeline refer to [pocketflow](https://github.com/Tencent/PocketFlow)
+
+
+## Citation
+If you find this work or code is helpful in your research, please cite:
+````
+@inproceedings{SunXLW19,
+  title={Deep High-Resolution Representation Learning for Human Pose Estimation},
+  author={Ke Sun and Bin Xiao and Dong Liu and Jingdong Wang},
+  booktitle={CVPR},
+  year={2019}
+}
+
+@article{SunZJCXLMWLW19,
+  title={High-Resolution Representations for Labeling Pixels and Regions},
+  author={Ke Sun and Yang Zhao and Borui Jiang and Tianheng Cheng and Bin Xiao 
+  and Dong Liu and Yadong Mu and Xinggang Wang and Wenyu Liu and Jingdong Wang},
+  journal   = {CoRR},
+  volume    = {abs/1904.04514},
+  year={2019}
+}
+````

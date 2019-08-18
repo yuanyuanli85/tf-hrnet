@@ -1,0 +1,15 @@
+*.idea
+*.pyc
+*.swp
+main.py
+logs
+models
+models_*
+automl_output_*
+.pylint_results
+start_multi.sh
+ratio.list
+path.conf
+nvidia-smi-dump
+ssd_outputs
+dump
