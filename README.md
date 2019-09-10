@@ -15,7 +15,7 @@ First, the four-resolution feature maps are fed into a bottleneck and the number
 ## Accuracy of pretrained models
 | model |#Params | GFLOPs |top-1 error| top-5 error| Link |
 | :--: | :--: | :--: | :--: | :--: | :--: |
-| HRNet-W18-C | 21.3M | 3.99 | -- | -- | To be shared|
+| HRNet-W18-C | 21.3M | 3.99 | 24.2% | 7.3% | [TF-HRNET-W18](https://drive.google.com/open?id=1sV92qsVkz1qXwvYOoxd3yZIVKXfj3gba)|
 | HRNet-W30-C | 37.7M | 7.55 | 21.9% | 6.0% | [TF-HRNet-W30](https://drive.google.com/open?id=1mYxMA_H4E-R8GDkPylzV7679DTzui_f3)|
 
 
